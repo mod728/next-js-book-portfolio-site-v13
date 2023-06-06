@@ -1,0 +1,113 @@
+.hero {
+    text-align: center; 
+    position: relative;
+}
+
+.hero > img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 0rem 2rem 1rem;
+    border-radius: 5px;
+}
+
+.textContainer > h1 {
+    font-size: 5rem;
+}
+ 
+.profile {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 5rem;
+    grid-auto-flow: dense;
+}
+
+.profile > * > p {
+    margin-bottom: 0;
+}
+
+.profile > * > img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.skills { 
+    padding: 0 0 10rem;
+}
+
+.skills > h2 {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.skills > .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    grid-row-gap: 3rem;
+}
+
+.skills > .skillsContainer > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.skills > .skillsContainer > * > img {
+    width: 100px;
+}
+
+.ctaButton {
+    padding: 0 0 10rem;
+    text-align: center;
+}
+
+.ctaButton > a {
+    display: inline-block;
+    margin: 10rem 0;
+    padding: 1.3rem 6rem;
+    background-color: #ff5436;
+    border-radius: 25px; 
+    color: #fff;
+}
+
+.ctaButton > a:hover {
+    opacity: 0.8;
+}
+
+/* Media Queries */
+@media(max-width: 540px) { 
+    .textContainer {
+        width: 80%;
+        padding: 1.5rem 1rem 3rem;
+    }
+
+    .profile {
+        padding: 5rem 0;
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+    }
+
+    .skills > .skillsContainer {
+        grid-template-columns: 1fr 
+    }
+    
+    .skills > h2 {
+        margin-bottom: 3rem;
+    }
+}
